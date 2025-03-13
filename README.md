@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/SagarSharma950/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [3524-minimum-number-of-flips-to-make-binary-grid-palindromic-ii](https://github.com/SagarSharma950/LeetCode/tree/master/3524-minimum-number-of-flips-to-make-binary-grid-palindromic-ii) |
 ## Two Pointers
 |  |
@@ -13,4 +14,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3524-minimum-number-of-flips-to-make-binary-grid-palindromic-ii](https://github.com/SagarSharma950/LeetCode/tree/master/3524-minimum-number-of-flips-to-make-binary-grid-palindromic-ii) |
+## Binary Search
+|  |
+| ------- |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/SagarSharma950/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
+## Counting
+|  |
+| ------- |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/SagarSharma950/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 <!---LeetCode Topics End-->
