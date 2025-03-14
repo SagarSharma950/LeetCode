@@ -46,4 +46,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/SagarSharma950/LeetCode/tree/master/0023-merge-k-sorted-lists) |
+## Hash Table
+|  |
+| ------- |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/SagarSharma950/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+## Tree
+|  |
+| ------- |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/SagarSharma950/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/SagarSharma950/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/SagarSharma950/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/SagarSharma950/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 <!---LeetCode Topics End-->
