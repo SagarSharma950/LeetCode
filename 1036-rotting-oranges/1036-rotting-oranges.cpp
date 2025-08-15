@@ -1,37 +1,55 @@
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
-        queue<pair<int,int>> q;
-        int cnt=0;
-        for(int i=0;i<grid.size();i++){
-            for(int j=0;j<grid[0].size();j++){
-                if(grid[i][j]==2){
-                    q.push({i,j});
+        int m = grid.size();
+        int n = grid[0].size();
+        int count = 0;
+        vector<pair<int,int>> curr;
+        vector<pair<int,int>> newRotten;
+        for(int i=0; i<m; i++){
+            for(int j =0; j<n; j++){
+                if( grid[i][j] == 2 ){
+                    curr.push_back( {i,j} );
                 }
-                else if(grid[i][j]==1) cnt++;
             }
         }
-        int dx[]={1,-1,0,0};
-        int dy[]={0,0,1,-1};
-        int flag=0;
-        while(!q.empty() && cnt>0){
-            int s=q.size();
-            flag++;
-            while(s--){
-                auto[x,y]=q.front();
-                q.pop();
-                for(int i=0;i<4;i++){
-                    int newX = x + dx[i];
-                    int newY = y + dy[i];
-                    if(newX >=0 and newX<grid.size() and newY>=0 and newY<grid[0].size() and grid[newX][newY]==1)
-                    {
-                        grid[newX][newY] = 2;
-                        q.push({newX,newY});
-                        cnt--;
+        int fresh = 0;
+        for(int i=0; i<m; i++){
+            for(int j =0; j<n; j++){
+                if( grid[i][j] == 1 ){
+                    fresh++;
+                }
+            }
+        }
+        vector<int> delrow = {-1,0,1,0};
+        vector<int> delcol = {0,1,0,-1};
+        while( true ){
+            if(fresh == 0){
+                return count;
+            }
+            if( curr.empty() ){
+                break;
+            }
+            count++;
+            for( auto it : curr ){
+                int row = it.first;
+                int col = it.second;
+                for(int k = 0; k<4; k++){
+                    int nrow = row + delrow[k];
+                    int ncol = col + delcol[k];
+                    if( nrow<0 || ncol<0 || nrow>=m || ncol>=n ){
+                        continue;
+                    }
+                    if( grid[nrow][ncol] == 1 ){
+                        newRotten.push_back( {nrow,ncol} );
+                        grid[nrow][ncol] = 2;
+                        fresh = fresh - 1;
                     }
                 }
             }
+            curr = newRotten;
+            newRotten.clear();
         }
-        return cnt==0?flag:-1;
+        return -1;
     }
 };
