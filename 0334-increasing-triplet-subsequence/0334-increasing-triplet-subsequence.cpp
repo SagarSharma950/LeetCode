@@ -1,10 +1,11 @@
 class Solution {
 public:
     bool increasingTriplet(vector<int>& nums) {
-        int one=INT_MAX, sec=INT_MAX;
-        for(int num:nums){
-            if(num<=one) one =num;
-            else if(num<=sec) sec=num;
+        int first=INT_MAX;
+        int second=INT_MAX;
+        for(int num: nums){
+            if(num<=first) first=num;
+            else if(num<=second) second=num;
             else return true;
         }
         return false;
